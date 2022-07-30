@@ -11,12 +11,12 @@ var minCostClimbingStairs = function (cost) {
     for (let i = 2; i < cost.length; i++) {
         dp[i] = sum + 1;
     }
-    const step = [1, 2];
     for (let floor = 0; floor < cost.length; floor++) {
-        for (let s = 0; s < step.length; s++) {
-            if (floor + step[s] < cost.length) {
-                dp[floor + step[s]] = min(dp[floor + step[s]], dp[floor] + cost[floor]);
-            }
+        if (floor + 1 < cost.length) {
+            dp[floor + 1] = min(dp[floor + 1], dp[floor] + cost[floor]);
+        }
+        if (floor + 2 < cost.length) {
+            dp[floor + 2] = min(dp[floor + 2], dp[floor] + cost[floor]);
         }
     }
     return min(dp[dp.length - 1] + cost[cost.length - 1], dp[dp.length - 2] + cost[cost.length - 2]);
