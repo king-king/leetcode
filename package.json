@@ -1,0 +1,31 @@
+{
+    "name": "leetcode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/king-king/leetcode.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/king-king/leetcode/issues"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@babel/eslint-parser": "^7.16.5",
+        "@babel/plugin-transform-runtime": "^7.16.8",
+        "@babel/preset-env": "^7.16.8",
+        "eslint": "^8.7.0",
+        "eslint-config-frontend-rules": "1.5.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.28.0",
+        "eslint-plugin-react-hooks": "^4.3.0"
+    },
+    "homepage": "https://github.com/king-king/leetcode#readme"
+}
