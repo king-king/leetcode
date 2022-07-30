@@ -3,11 +3,13 @@
  * @return {number}
  */
 var climbStairs = function (n) {
-    const dp = [1, 1];
+    let f_1 = 1, f_2 = 1;
     for (let floor = 2; floor <= n; floor++) {
-        dp[floor] = dp[floor - 1] + dp[floor - 2];
+        const next = f_1 + f_2;
+        f_2 = f_1;
+        f_1 = next;
     }
-    return dp[dp.length - 1];
+    return f_1;
 };
 
 // console.log(climbStairs(2), climbStairs(2) === 2);

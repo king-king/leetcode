@@ -10,6 +10,7 @@ module.exports = {
         describe: true
     },
     rules: {
+        camelcase: 0,
         'no-console': 0,
         'no-var': 0,
         'arrow-body-style': 0,
